@@ -13,10 +13,6 @@ var addItem = function(item) {
 	_store.list.push(item);
 };
 
-var removeItem = function(index) {
-	_store.list.splice(index, 1);
-}
-
 var todoStore = objectAssign({}, EventEmitter.prototype, {
 	addChangeListener: function(cb) {//cb為setState...
 		this.on(CHANGE_EVENT, cb);
@@ -38,9 +34,6 @@ AppDispatcher.register(function(payload) {
 			addItem(action.data);
 			todoStore.emit(CHANGE_EVENT);//直接觸發"Change" Event
 			break;
-		case appConstants.REMOVE_ITEM:
-			removeItem(action.data);
-			todoStore.emit(CHANGE_EVENT);
 		default: 
 			return true;
 	}

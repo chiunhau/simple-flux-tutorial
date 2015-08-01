@@ -1,16 +1,15 @@
 {
-  "name": "simple-flux",
+  "name": "simple-flux-tutorial",
   "version": "1.0.0",
-  "description": "SimpleApp",
+  "description": "An simple React Flux tutorial",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": "https://github.com/chiunhau/simple-flux.git",
+  "repository": "https://github.com/chiunhau/simple-flux-tutorial",
   "author": "Chiunhsu",
   "license": "ISC",
   "dependencies": {
-    "events": "^1.0.2",
     "flux": "^2.0.3",
     "react": "^0.13.3"
   },

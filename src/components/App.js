@@ -26,9 +26,6 @@ var App = React.createClass({
 	handleAddItem: function(newItem) {
 		todoActions.addItem(newItem);
 	},
-	handleRemoveItem: function(index) {
-		todoActions.removeItem(index);
-	},
   render: function() {
   	return (
 			<div className="app">

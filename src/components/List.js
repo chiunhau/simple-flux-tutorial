@@ -4,7 +4,7 @@ var List = React.createClass({
   render: function() {
   	var listItems = this.props.items.map(function(item, i) {
   		return (
-  			<li key={i} className="lsit-item" onClick={this.props.removeItem.bind(null, i)}>
+  			<li key={i} className="lsit-item">
 	  			{item}
 	  		</li>
   		)
